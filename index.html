@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+
+-->
+
+<head>
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="nav-bar-header">JAVA DOCUMENTATION</header>
+        <ul>
+            <li><a href="#java_intro " class="nav-link">Java Intro</a></li>
+            <li><a href="#java_syntax " class="nav-link">Java Syntax</a></li>
+            <li><a href="#java_comments " class="nav-link">Java Comments</a></li>
+            <li><a href="#java_variables " class="nav-link">Java Variables</a></li>
+            <li><a href="#java-if-else " class="nav-link">Java If...Else Statement</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc ">
+        <section class="main-section " id="java_intro ">
+            <header>Java Intro</header>
+            <h2>What Is Java?</h2>
+            <p>Java is a popular programming language, created in 1995.</p>
+            <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+            <p> It is used for:</p>
+            <ul>
+                <li>Mobile applications (specially Android apps)</li>
+                <li>Desktop applications</li>
+                <li>Web applications</li>
+                <li>Web servers and application servers</li>
+                <li>Games</li>
+                <li>Database connection</li>
+            </ul>
+            <h2>Why Use Java</h2>
+            <ul>
+                <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                <li>It is one of the most popular programming language in the world</li>
+                <li>It is easy to learn and simple to use</li>
+                <li>It is open-source and free</li>
+                <li>It is secure, fast and powerful</li>
+                <li>It has a huge community support (tens of millions of developers)</li>
+                <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+
+            </ul>
+        </section>
+
+        <section class="main-section " id="java_syntax ">
+            <header>Java Syntax</header>
+            <code>
+                <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World ");
+    }
+}
+                </pre>
+            </code>
+            <h3>Example explained</h3>
+            <p>Every line of code that runs in Java must be inside a class. In our example, we named the class Main. A class should always start with an uppercase first letter. Note: Java is case-sensitive: "MyClass " and "myclass " has different meaning.
+                The name of the java file must match the class name. When saving the file, save it using the class name and add ".java " to the end of the filename. </p>
+            <p>The output should be:</p>
+            <code class="output-box ">Hello World</code>
+            <h2>The main Method</h2>
+            <p>The main() method is required and you will see it in every Java program:</p>
+            <code><pre>public static void main(String[] args)</pre></code>
+            <p>Any code inside the main() method will be executed. You don't have to understand the keywords before and after main. You will get to know them bit by bit while reading this tutorial. For now, just remember that every Java program has a class
+                name which must match the filename, and that every program must contain the main() method.</p>
+
+            <h2>System.out.println()</h2>
+            <p>Inside the main() method, we can use the println() method to print a line of text to the screen:</p>
+            <code><pre>
+public static void main(String[] args) {
+    System.out.println("Hello World ");
+}
+            </pre></code>
+
+        </section>
+
+        <section class="main-section " id="java_comments ">
+            <header>Java Comments</header>
+            <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+            <h2>Single-line Comments</h2>
+            <p>Single-line comments start with two forward slashes (//).</p>
+            <p>Any text between // and the end of the line is ignored by Java (will not be executed).</p>
+            <p>This example uses a single-line comment before a line of code:</p>
+            <code><pre>
+// This is a comment
+System.out.println("Hello World ");</pre></code>
+            <p>This example uses a single-line comment at the end of a line of code:</p>
+            <code><pre>System.out.println("Hello World "); // This is a comment</pre></code>
+            <h2>Multi-line Comments</h2>
+            <p>Multi-line comments start with /* and ends with */.</p>
+            <p>Any text between /* and */ will be ignored by Java.</p>
+            <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+
+            <code><pre>
+/* The code below will print the words Hello World
+to the screen, and it is amazing */
+System.out.println("Hello World ");</pre></code>
+        </section>
+
+        <section class="main-section " id="java_variables ">
+            <header>Java Variables</header>
+            <p>Variables are containers for storing data values.</p>
+            <p>In Java, there are different types of variables, for example:</p>
+
+            <ul>
+                <li><strong>String</strong> - stores text, such as "Hello ". String values are surrounded by double quotes</li>
+                <li><strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li><strong>float</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                <li><strong>boolean</strong> - stores values with two states: true or false</li>
+            </ul>
+            <h2>Declaring (Creating) Variables</h2>
+            <p>To create a variable, you must specify the type and assign it a value:</p>
+            <code><pre>type variable = value;</pre></code>
+            <p>Where type is one of Java's types (such as int or String), and variable is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.</p>
+            <p>To create a variable that should store text, look at the following example:</p>
+            <code><pre>
+String name = "John ";
+System.out.println(name);</pre></code>
+            <p>The output should be:</p>
+            <code class="output-box ">John</code>
+        </section>
+
+        <section class="main-section " id="java-if-else ">
+            <header>Java If...Else Statement</header>
+            <p>Java supports the usual logical conditions from mathematics:</p>
+            <ul>
+                <li>Less than: a &lt b</li>
+                <li>Less than or equal to: a &lt= b</li>
+                <li>Greater than: a > b</li>
+                <li>Greater than or equal to: a >= b</li>
+                <li>Equal to a == b</li>
+                <li>Not Equal to: a != b</li>
+            </ul>
+            <p>You can use these conditions to perform different actions for different decisions</p>
+            <p>Java has the following conditional statements:</p>
+            <ul>
+                <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+                <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+                <li>Use else if to specify a new condition to test, if the first condition is false</li>
+                <li>Use switch to specify many alternative blocks of code to be executed</li>
+            </ul>
+            <h2>The if Statement</h2>
+            <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+            <code><pre>
+if (20 > 18) {
+    System.out.println("20 is greater than 18 ");
+}</pre></code>
+            <code class="output-box ">20 is greater than 18</code>
+            <p>We can also test variables:</p>
+            <code><pre>
+int x = 20;
+int y = 18;
+if (x > y) {
+    System.out.println("x is greater than y ");
+}</pre></code>
+            <code class="output-box ">x is greater than y</code>
+            <h3>Example explained</h3>
+            <p>Example explained In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than
+                y ".
+            </p>
+            <h2>The else Statement</h2>
+            <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+            <code><pre>
+int time = 20;
+if (time &lt 18) {
+    System.out.println("Good day. ");
+} 
+else {
+    System.out.println("Good evening. ");
+}
+                </pre></code>
+            <code class="output-box ">Good Evening.</code>
+            <h3>Example explained</h3>
+            <p>Example explained In the example above, time (20) is greater than 18, so the condition is false. Because of this, we move on to the else condition and print to the screen "Good evening ". If the time was less than 18, the program would print
+                "Good day ".</p>
+
+            <h2>The else if Statement</h2>
+            <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+            <code><pre>
+int time = 22;
+if (time &lt 10) {
+      System.out.println("Good morning. ");
+} else if (time &lt 20) {
+      System.out.println("Good day. ");
+} else {
+      System.out.println("Good evening. ");
+}
+                </pre></code>
+            <code class="output-box ">Good Evening.</code>
+            <h3>Example explained</h3>
+            <p>In the example above, time (22) is greater than 10, so the first condition is false. The next condition, in the else if statement, is also false, so we move on to the else condition since condition1 and condition2 is both false - and print
+                to the screen "Good evening ". However, if the time was 14, our program would print "Good day. "</p>
+        </section>
+
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
+</body>
+
+
+</html>
